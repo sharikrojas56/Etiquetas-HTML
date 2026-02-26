@@ -161,91 +161,63 @@ section ul li {
 
 /* diseño footer */
 
-.footer-clouds {
-    position: relative;
-    background: #020617;
-    color: white;
-    padding: 120px 0 280px 0;
-    overflow: hidden;
+#footer {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: #f1f5ff;
+    padding: 80px 60px 30px 60px;
+    border-radius: 30px 30px 0 0;
 }
 
-/* Contenedor columnas */
-.footer-content {
-    display: flex;
-    justify-content: center;
-    gap: 120px;
-    position: relative;
-    z-index: 3;
+/* Contenedor principal */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 60px;
+}
+
+/* Logo */
+#logo-footer {
+    width: 180px;
+    margin-bottom: 20px;
 }
 
 /* Títulos */
-.footer-content h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
+.footer-box h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #93c5fd;
 }
 
-/* Links */
-.footer-content a {
+/* Links en columna */
+.footer-box a {
     display: block;
     text-decoration: none;
-    color: #e2e8f0;
-    margin-bottom: 8px;
+    color: #dbeafe;
+    margin-bottom: 10px;
     font-size: 14px;
     transition: 0.3s ease;
 }
 
-.footer-content a:hover {
+.footer-box a:hover {
     color: #ffffff;
-    transform: translateX(6px);
+    transform: translateX(5px);
 }
 
-/* Texto normal */
-.footer-content p {
+/* Texto */
+.footer-box p {
     font-size: 14px;
-    opacity: 0.85;
+    line-height: 1.6;
+    color: #e0e7ff;
 }
 
-/* Copyright centrado */
-.footer-bottom {
-    margin-top: 70px;
+/* Copyright */
+.footer-copy {
     text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
     font-size: 13px;
-    opacity: 0.7;
-    position: relative;
-    z-index: 3;
-}
-
-/* Degradado inferior */
-.footer-clouds::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 220px;
-    background: linear-gradient(
-        to top,
-        #ff2e63 0%,
-        #ff6b8a 40%,
-        rgba(255,255,255,0.6) 75%,
-        transparent 100%
-    );
-    z-index: 2;
-}
-
-/* Nubes */
-.footer-clouds::before {
-    content: "";
-    position: absolute;
-    bottom: 120px;
-    left: -200px;
-    width: 600px;
-    height: 300px;
-    background: #e5e7eb;
-    border-radius: 50%;
-    box-shadow:
-        400px 40px 0 80px #e5e7eb,
-        800px 60px 0 120px #e5e7eb,
-        1150px 20px 0 90px #e5e7eb,
-        1500px 70px 0 140px #e5e7eb;
-    z-index: 1;
+    opacity: 0.8;
 }
