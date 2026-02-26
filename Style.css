@@ -1,3 +1,41 @@
-.h1{
-    color: blue;
+body {
+    background-color: #c0d6ec; /* Fondo azul grisáceo suave */
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #2d2d2d;
+}
+
+nav {
+    background-color: #a8c3e9; /* Azul grisáceo claro */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); /* Sombra ligera para separar del fondo */
+    border: 1px solid #d3dae1; /* Delicado borde para definición */
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: normal;
+    color: #1f2937; 
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #4b5563; /* Gris editorial */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    padding: 5px 8px;
+    border-radius: 5px; /* Pequeño redondeado para links */
+}
+
+nav a:hover {
+    background-color: rgba(79, 104, 140, 0.15); /* Fondo suave al pasar el mouse */
+    color: #111827;
 }
