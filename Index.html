@@ -10,10 +10,12 @@
     
 </head>
 <body>
+
+<!-- NAV -->
 <nav>
-    <h2>Etiquetas HTML</h2>
-    <a href="#">Inicio</a> |
-    <a href="#">Etiquetas Semánticas</a>
+    <h2>Etietas HTML</h2>
+    <a href="#hero">Inicio</a> |
+    <a href="#">Etiquetas Semánticas</a> |
     <a href="#">Texto</a> |
     <a href="#">Listas</a> |
     <a href="#">Formularios</a> |
@@ -21,8 +23,49 @@
     <a href="#">Multimedia</a>
 </nav>
 
-    <main id="contenido-principal">
+<main id="contenido-principal">
 
+    <!-- HERO -->
+    <section id="hero">
+        <h1 id="titulo-principal">Guía Completa de Etiquetas HTML</h1>
+        <p id="subtitulo-hero">
+            Aprende la estructura básica de HTML de forma sencilla y práctica.
+        </p>
+        <a href="#introduccion" id="boton-empezar">Empezar</a>
+    </section>
+
+    <!-- TABLA DE CONTENIDO -->
+    <section id="tabla-contenido">
+        <h2>Contenido de la Página</h2>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#que-es-html">¿Qué es HTML?</a></li>
+            <li><a href="#seccion-video">Video Explicativo</a></li>
+        </ul>
+    </section>
+
+    <!-- OBJETIVOS -->
+    <section id="objetivos">
+        <h2>Objetivos</h2>
+        <ul>
+            <li>Comprender qué es HTML.</li>
+            <li>Identificar las etiquetas básicas.</li>
+            <li>Aplicar correctamente las etiquetas en ejemplos prácticos.</li>
+        </ul>
+    </section>
+
+    <!-- ¿QUÉ ES HTML? -->
+    <section id="que-es-html">
+        <h2>¿Qué es HTML?</h2>
+        <p>
+            HTML (HyperText Markup Language) es un lenguaje de marcado utilizado 
+            para estructurar páginas web. Es el estándar recomendado por el 
+            World Wide Web Consortium (W3C).
+        </p>
+    </section>
+
+    <!-- INTRODUCCIÓN -->
     <section id="introduccion">
         <h2 id="titulo-introduccion">Introducción</h2>
 
@@ -39,20 +82,40 @@
         </p>
     </section>
 
-</main>
-    <!--Footer-->
+    <!-- VIDEO -->
+    <section id="seccion-video">
+        <div id="contenedor-video">
+            <h2 id="titulo-video">Video Explicativo</h2>
+            
+            <p id="descripcion-video">
+                A continuación, puedes visualizar un video explicativo sobre HTML.
+            </p>
 
-    <footer>
+            <div id="video">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/10GHKjgQIR0"
+                    title="Video sobre HTML"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
     <hr>
 
-    <section>
-        <h3>Blog de Etiquetas HTML</h3>
+    <section id="footer-info">
+        <h3>Blog de Etietas HTML</h3>
         <p>Proyecto académico sobre las principales etiquetas de HTML.</p>
     </section>
 
-    <section>
+    <section id="footer-enlaces">
         <h4>Enlaces rápidos</h4>
-        <a href="#">Inicio</a> 
+        <a href="#hero">Inicio</a> 
         <a href="#">Etiquetas Semánticas</a>
         <a href="#">Texto</a> 
         <a href="#">Listas</a> 
@@ -61,13 +124,14 @@
         <a href="#">Multimedia</a>
     </section>
 
-    <section>
+    <section id="footer-copy">
         <p>© 2026 - Todos los derechos reservados</p>
         <p>Desarrollado por Sharik y Justin</p>
     </section>
 </footer>
 
-    <!-- Bootstrap -->
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap -->
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
