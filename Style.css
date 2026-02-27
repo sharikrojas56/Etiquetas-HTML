@@ -6,13 +6,13 @@ body {
 }
 
 nav {
-    background-color: #a8c3e9; 
+    background-color: #030250; 
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 12px; 
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); 
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.05); 
     border: 1px solid #d3dae1; 
 }
 
@@ -20,12 +20,12 @@ nav h2 {
     margin: 0;
     font-size: 22px;
     font-weight: normal;
-    color: #1f2937; 
+    color: #ffffff; 
     letter-spacing: 1px;
 }
 
 nav a {
-    color: #4b5563; 
+    color: #ffffff; 
     text-decoration: none;
     margin-left: 20px;
     font-size: 15px;
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(79, 104, 140, 0.15); 
+    background-color: rgb(255, 255, 255); 
     color: #111827;
 }
 
@@ -141,6 +141,43 @@ section ul li {
     color: #1e40af;
 }
 
+/* ===== TABLA DE CONTENIDO TIPO WIKIPEDIA ===== */
+
+#tabla-contenido {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 20px 25px;
+    max-width: 400px;
+    margin: 30px 0 40px 0;
+}
+
+#tabla-contenido h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 8px;
+}
+
+#tabla-contenido ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#tabla-contenido li {
+    margin-bottom: 8px;
+}
+
+#tabla-contenido a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-size: 15px;
+}
+
+#tabla-contenido a:hover {
+    text-decoration: underline;
+}
+
 /* VIDEO */
 #contenedor-video {
     text-align: center;
@@ -177,8 +214,8 @@ section ul li {
 
 /* Logo */
 #logo-footer {
-    width: 180px;
-    margin-bottom: 20px;
+    width: 300px;
+    margin-bottom: 10px;
 }
 
 /* Títulos */
@@ -220,4 +257,85 @@ section ul li {
     border-top: 1px solid rgba(255,255,255,0.2);
     font-size: 13px;
     opacity: 0.8;
+}
+
+/*pagina SEMANTICAS*/
+
+#contenido-principal {
+    max-width: 850px;
+    margin: 40px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #2d3436;
+}
+
+#subtitulo-hero {
+    font-size: 1.2rem;
+    color: #636e72;
+    border-left: 5px solid #0984e3; /* Detalle estético */
+    padding-left: 15px;
+}
+
+/* Reemplazo para el <center> */
+.titulo-seccion {
+    text-align: center;
+    margin: 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* CONTENEDOR GENERAL */
+#Tipo-Etiquetas {
+    margin-top: 60px;
+}
+
+/* TARJETAS */
+.tema-card {
+    background: #ffffff;
+    padding: 25px 30px;
+    margin: 25px 0;
+    border-radius: 14px;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.tema-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Título de cada etiqueta */
+.tema-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+/* Subtítulo */
+.tema-card h4 {
+    margin-top: 20px;
+    color: #334155;
+}
+
+/* Imagen */
+.tema-card img {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    margin: 15px auto 0 auto;
+    border-radius: 10px;
+}
+
+/* Caja ejemplo */
+.ejemplo {
+    text-align: center;
+    margin-top: 15px;
 }
