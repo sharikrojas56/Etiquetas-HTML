@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <title>Etiquetas Semánticas</title>
+    <title>Listas</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
@@ -24,31 +24,33 @@
 
     <!-- HERO -->
     <section id="hero">
-        <h1 id="titulo-principal">Etiquetas Semánticas</h1>
+        <h1 id="titulo-principal">Listas</h1>
         <p id="subtitulo-hero">
-            Aprende sobre las etiquetas semánticas en HTML y su importancia para la estructura y accesibilidad de las páginas web.
+            Aprende sobre las etiquetas de listas en HTML y su importancia para organizar contenido.
         </p>
         
     </section>
 
     <section id="introduccion">
-    <h2>Introducción a las Etiquetas Semánticas</h2>
+    <h2>Introducción a las Etiquetas de Listas</h2>
     <p>
-        Las etiquetas semánticas ayudan a que la página esté mejor organizada y sea más fácil de entender tanto para las personas como para los navegadores.
+        Las listas en HTML se usan para mostrar información de forma ordenada y clara. Sirven cuando tienes varios elementos que pertenecen a un mismo grupo, como opciones de un menú, pasos a seguir o características..
     </p>
 </section>
 
+
+<!--ul-->
 <section id="Tipo-Etiquetas">
 
-    <h2>Tipos de Etiquetas Semánticas</h2>
-    <p>Algunas de las etiquetas semánticas más comunes son:</p>
+    <h2>Tipos de Etiquetas de Listas</h2>
+    <p>Algunas de las etiquetas de listas más comunes son:</p>
 
     <div class="tema-card">
 
-        <h3>Header</h3>
+        <h3>ul</h3>
 
         <p>
-            La etiqueta <code>&lt;header&gt;</code> se utiliza para definir la cabecera de una sección o página.
+            La etiqueta &lt;ul&gt; significa lista no ordenada (unordered list). <br>Se usa para mostrar elementos en forma de lista con viñetas (punticos), cuando el orden no importa.
         </p>
 
         <h4 class="text-center mb-4">Ejemplo de uso:</h4>
@@ -58,11 +60,11 @@
 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Código HTML:</h5>
-                    <img src="img/Codigo Header.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                    <img src="img/ul.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
                 </div> 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Resultado:</h5>
-                    <img src="img/Header.png"
+                    <img src="img/ul pagina.png"
                         class="img-fluid rounded shadow w-100">
                 </div>
 
@@ -76,13 +78,13 @@
     </div>
 
 
-    <!--NAV-->
+    <!--ol-->
     <div class="tema-card">
 
-        <h3>Nav</h3>
+        <h3>ol</h3>
 
         <p>
-            La etiqueta <code>&lt;nav&gt;</code> se utiliza para definir un bloque de navegación en una página web, como menús o enlaces a otras secciones.
+            La etiqueta <code>&lt;ol&gt;</code> significa lista ordenada (ordered list). <br>Se usa para mostrar elementos en forma de lista numerada, cuando el orden es importante.
         </p>
 
         <h4 class="text-center mb-4">Ejemplo de uso:</h4>
@@ -92,27 +94,29 @@
 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Código HTML:</h5>
-                    <img src="img/Nav.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                    <img src="img/codigo ol.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
                 </div> 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Resultado:</h5>
-                    <img src="img/Nav pagina.png"
+                    <img src="img/ol.png"
                         class="img-fluid rounded shadow w-100">
                 </div>
+
+                
 
             </div>
         </div>
 
 
-    <!--Main-->
+    <!--il-->
     </div>
 
      <div class="tema-card">
 
-        <h3>Main</h3>
+        <h3>li</h3>
 
         <p>
-            La etiqueta <code>&lt;main&gt;</code> se utiliza para definir el contenido principal de una página web, diferenciándolo de otros elementos como encabezados, pies de página o barras laterales.
+            La etiqueta <code>&lt;li&gt;</code> se utiliza para definir un elemento de una lista en HTML. Se usa dentro de las etiquetas <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code> para crear elementos individuales de una lista.
         </p>
 
         <h4 class="text-center mb-4">Ejemplo de uso:</h4>
@@ -122,13 +126,18 @@
 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Código HTML:</h5>
-                    <img src="img/Codigo main.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                    <img src="img/codigo il.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
                 </div> 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Resultado:</h5>
-                    <img src="img/Main.png"
+                    <img src="img/il.png"
                         class="img-fluid rounded shadow w-100">
                 </div>
+
+            <p id="subtitulo-hero">
+                    En pocas palabras: 
+                    &lt;li&gt; es cada ítem o punto dentro de una lista.
+            </p>
 
             </div>
         </div>
@@ -138,11 +147,15 @@
 
     </div>
 
+
+    <!-- dl -->
      <div class="tema-card">
 
-        <h3>Section</h3>
+        <h3>dl</h3>
         <p>
-           La etiqueta <code>&lt;section&gt;</code> se utiliza para agrupar o definir una sección genérica de contenido en una página web, que puede contener encabezados, párrafos, imágenes u otros elementos relacionados.
+           La etiqueta &lt;dl&gt; significa lista de descripción (description list). Se usa para mostrar una lista de términos y su explicación. No usa números ni viñetas. Dentro de &lt;dl&gt; se usan:<br>
+            &lt;dt&gt; → el término<br>
+            &lt;dd&gt; → la descripción
         </p>
 
         <h4 class="text-center mb-4">Ejemplo de uso:</h4>
@@ -151,11 +164,11 @@
 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Código HTML:</h5>
-                    <img src="img/Codigo section.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                    <img src="img/dl codigo.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
                 </div> 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Resultado:</h5>
-                    <img src="img/Section.png"
+                    <img src="img/dl.png"
                         class="img-fluid rounded shadow w-100">
                 </div>
 
@@ -164,12 +177,13 @@
 
     </div>
 
-    <!--Article-->
+    <!--dt y dd-->
     <div class="tema-card">
 
-        <h3>Article</h3>
+        <h3>dt y dd</h3>
         <p>
-           La etiqueta <code>&lt;article&gt;</code> se utiliza para definir un contenido independiente y autocontenido en una página web, como un artículo de blog, una publicación de noticias o una entrada de foro.
+           La etiqueta <code>&lt;dt&gt;</code> define un término en una lista de descripción, mientras que <code>&lt;dd&gt;</code> define la descripción de ese término. Ambas se usan dentro de una etiqueta <code>&lt;dl&gt;</code>.
+
         </p>
 
         <h4 class="text-center mb-4">Ejemplo de uso:</h4>
@@ -178,11 +192,11 @@
 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Código HTML:</h5>
-                    <img src="img/Codigo Article.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                    <img src="img/codigo dd y dt.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
                 </div> 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Resultado:</h5>
-                    <img src="img/Article.png"
+                    <img src="img/dt y dd.png"
                         class="img-fluid rounded shadow w-100">
                 </div>
 
@@ -190,63 +204,8 @@
         </div>
 
     </div>
-
-    <!--Aside-->
-        <div class="tema-card">
-
-        <h3>Aside</h3>
-        <p>
-           La etiqueta <code>&lt;aside&gt;</code> se utiliza para definir contenido secundario o complementario en una página web, como una barra lateral o una nota al margen.
-        </p>
-
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="img/Codido Aside.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                    <img src="img/aside.png"
-                        class="img-fluid rounded shadow w-100">
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- Footer -->
-        <div class="tema-card">
-
-        <h3>Footer</h3>
-        <p>
-           La etiqueta <code>&lt;footer&gt;</code> se utiliza para definir el pie de página de una sección o página web, que puede contener información como el copyright, los enlaces de navegación o los datos de contacto.
-        </p>
-
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="img/Codigo Footer.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                    <img src="img/Footer.png"
-                        class="img-fluid rounded shadow w-100">
-                </div>
-
-            </div>
-        </div>
-
-    </div>    
-    <br>
-    <p> Con esto terminamos el tema de las etiquetas semánticas, espero que hayas aprendido algo nuevo sobre HTML.</p>
+     <p> Con estas etiquetas de listas puedes organizar mejor tu contenido en HTML, es muy útil para estructurar información de manera clara y legible.</p>
+    
 </section>
 </main>
 
