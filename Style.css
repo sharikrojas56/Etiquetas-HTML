@@ -339,3 +339,14 @@ h1 {
     text-align: center;
     margin-top: 15px;
 }
+
+.tema-card .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tema-card img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+}
