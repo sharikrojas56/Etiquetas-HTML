@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body>
+    <!-- NAV -->
+<nav>
+    <h2>Etiquetas HTML</h2>
+    <a href="./Index.html">Inicio</a> |
+    <a href="./EtiquetasSemanticas.html">Etiquetas Semánticas</a> |
+    <a href="./Texto.html">Texto</a> |
+    <a href="Listas.html">Listas</a> |
+    <a href="./Formularios.html">Formularios</a> |
+    <a href="./Tablas.html">Tablas</a> |
+    <a href="./Multimedia.html">Multimedia</a>
+</nav>
+
+<main class="container my-5" id="contenido-principal">
+
+    <!-- HERO -->
+    <section id="hero">
+        <h1 id="titulo-principal">Formularios</h1>
+        <p id="subtitulo-hero">
+            Aprende sobre las etiquetas de formularios en HTML y su importancia para recopilar información del usuario.
+        </p>
+        
+    </section>
+
+    <section id="introduccion">
+    <h2>Introducción a las Etiquetas de Formularios</h2>
+    <p>
+        Los formularios en HTML se usan para recopilar información del usuario. Sirven cuando necesitas que el usuario ingrese datos como su nombre, correo electrónico, contraseña o cualquier otra información relevante.
+    </p>
+</section>
+
+
+<!--form-->
+<section id="Tipo-Etiquetas">
+
+    <h2>Tipos de Etiquetas de Formularios</h2>
+    <p>Algunas de las etiquetas de formularios más comunes son:</p>
+
+    <div class="tema-card">
+
+        <h3>Form</h3>
+
+        <p>
+            La etiqueta &lt;form&gt; se utiliza para crear un formulario en HTML. <br>Este elemento agrupa los elementos de entrada del formulario, como campos de texto, botones y listas desplegables.
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/form.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <form id="miFormulario">
+                        <label>Nombre:</label>
+                        <input type="text" id="nombre" required>
+                        <button type="submit">Enviar</button>
+                        </form>
+                    <p id="mensaje"></p>
+                </div>
+
+            </div>
+        </div>
+
+        <p id="subtitulo-hero">
+            Importante: El mensaje de "Formulario enviado" aparece gracias a JavaScript, no al HTML.
+            El HTML solo crea el formulario, pero la acción al enviarlo la maneja JavaScript.
+            Aunque no se muestra aquí, el JS es necesario para que funcione; estos ejemplos solo explica la estructura en HTML."
+        </p>
+
+    </div>
+
+
+    <!--label-->
+    <div class="tema-card">
+
+        <h3>Label</h3>
+
+        <p>
+            La etiqueta <code>&lt;label&gt;</code> sirve para ponerle nombre o descripción a un campo del formulario.<br>
+
+            Le dice al usuario qué debe escribir en ese espacio.
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/LABEL.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                     <label for="edad">Edad:</label>
+                    <input type="number" id="edad">
+                    <button onclick="mostrarEdad()">Ver edad</button>
+                    <p id="resultado"></p>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+
+    <!--input-->
+    </div>
+
+     <div class="tema-card">
+
+        <h3>input</h3>
+
+        <p>
+            La etiqueta <code>&lt;input&gt;</code> se utiliza para crear campos de entrada en un formulario HTML. Puede tener diferentes tipos como texto, número, contraseña, etc.<br>
+            Es el elemento principal para que los usuarios ingresen datos en un formulario.
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/Input.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                        <label for="clave">Nueva contraseña:</label>
+                        <input type="password" id="clave">
+                        <button type="button" onclick="NuevaContraseña()">Cambiar</button>
+                        <p id="resultadoClave"></p>
+                </div>
+
+            
+
+            </div>
+        </div>
+
+
+    </div>
+
+        <!--TIPOS INPUT -->
+    <div class="tema-card">
+
+        <h3>Tipos de input</h3>
+        <p>
+           La etiqueta <code>&lt;input&gt;</code> puede tener diferentes tipos como texto, número, contraseña, etc. Cada tipo tiene su propia funcionalidad y uso específico dentro de un formulario HTML.
+
+        </p>
+
+        <!-- Aca coloque los tipos de input
+        •	text
+        •	email
+        •	password
+        •	number
+        •	date
+        •	radio
+        •	checkbox
+        •	file
+        •	submit
+        -->
+
+    <!-- TEXT -->  
+    <div class="tema-card">
+
+
+        <h3>text</h3>
+        <p>
+           ....
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                </div>
+
+            </div>
+        </div>     
+    </div>
+
+     <!-- EMAIL -->  
+    <div class="tema-card">
+
+        <h3>email</h3>
+        <p>
+           ....
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                </div>
+
+            </div>
+        </div>     
+    </div>
+
+     <!-- PASSWORD -->  
+
+    <div class="tema-card">
+
+        <h3>password</h3>
+        <p>
+           ....
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                </div>
+
+            </div>
+        </div>     
+    </div>
+
+     <!-- NUMBER -->  
+
+    <div class="tema-card">
+
+        <h3>number</h3>
+        <p>
+           ....
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                </div>
+
+            </div>
+        </div>     
+    </div>
+
+    <!-- DATE -->
+    <div class="tema-card">
+
+        <h3>date</h3>
+        <p>
+           ....
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                </div>
+
+            </div>
+        </div>     
+    </div>
+
+        <!-- RADIO -->
+    <div class="tema-card">
+
+        <h3>radio</h3>
+        <p>
+           ....
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                </div>
+
+            </div>
+        </div>     
+    </div>
+
+        <!-- CHECKBOX -->
+    <div class="tema-card">
+
+        <h3>checkbox</h3>
+        <p>
+           ....
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                </div>
+
+            </div>
+        </div>     
+    </div>
+
+     <!-- FILE -->
+    <div class="tema-card">
+
+        <h3>file</h3>
+        <p>
+           ....
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                </div>
+
+            </div>
+        </div>     
+    </div>
+
+     <!-- SUBMIT -->
+    <div class="tema-card">
+
+        <h3>submit</h3>
+        <p>
+           ....
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                </div>
+
+            </div>
+        </div>     
+    </div>
+    </div>
+
+
+
+
+    <!-- dl -->
+     <div class="tema-card">
+
+        <h3>textarea</h3>
+        <p>
+           La etiqueta <code>&lt;textarea&gt;</code> se usa para crear un campo de texto de múltiples líneas en un formulario HTML. Es útil cuando se necesita que el usuario escriba una cantidad mayor de texto, como una descripción o comentario.
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/textarea.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <textarea id="texto" placeholder="Escribe algo..."></textarea>
+                    <br><br>
+                    <button onclick="mostrarTexto()">Mostrar</button>
+                    <p id="mostrarTexto"></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Select-->
+    <div class="tema-card">
+
+        <h3>select</h3>
+        <p>
+           La etiqueta <code>&lt;select&gt;</code> se usa para crear un menú desplegable con opciones. Se combina con etiquetas <code>&lt;option&gt;</code> para definir cada opción del menú.
+
+
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/Select.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <select id="opciones">
+                        <option value="">Seleccione una opción</option>
+                        <option value="Manzana">Manzana</option>
+                        <option value="Banano">Banano</option>
+                        <option value="Uva">Uva</option>
+                    </select>
+                    <br><br>
+                    <button onclick="mostrarSeleccion()">Mostrar</button>
+                    <p id="mostrarSeleccion"></p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+     <!--Option-->
+    <div class="tema-card">
+
+        <h3>option</h3>
+        <p>
+           La etiqueta <code>&lt;option&gt;</code> se usa dentro de una etiqueta <code>&lt;select&gt;</code> para definir cada opción disponible en un menú desplegable. Cada opción tiene un valor y un texto visible para el usuario.
+
+
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/option.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <select id="colores">
+                        <option value="">Seleccione una opción</option>
+                        <option value="Rojo">Rojo</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Naranja">Naranja</option>
+                    </select>
+                    <br><br>
+                    <button onclick="mostrarSeleccionColor()">Mostrar</button>
+                    <p id="mostrarSeleccionColor"></p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--button-->
+    <div class="tema-card">
+
+        <h3>button</h3>
+        <p>
+           La etiqueta <code>&lt;button&gt;</code> se usa para crear un botón interactivo que puede ser clickeado por el usuario. Puede contener texto o imágenes y se utiliza comúnmente en formularios para enviar datos o ejecutar acciones específicas.
+
+
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/button.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <button onclick="saludar()">Haz clic aquí</button>
+                    <p id="mensajeSaludo"></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <!--fieldset-->
+    <div class="tema-card">
+
+        <h3>fieldset</h3>
+        <p>
+           La etiqueta <code>&lt;fieldset&gt;</code> se usa para agrupar elementos relacionados dentro de un formulario. Puede contener una etiqueta <code>&lt;legend&gt;</code> que describe el grupo de elementos dentro del fieldset.
+
+
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/fieldset.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <form>
+                        <fieldset>
+                            <legend>Datos Personales</legend>
+                                Nombre: <input type="text" id="Nombre">
+                            <br><br>
+                                Edad: <input type="number" id="Edad">
+                            <br><br>
+                            <button type="button" onclick="
+                            mostrarDatos()">Enviar</button>
+                        </fieldset>
+                    </form><p id="resultadoDatos"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--legend-->
+    <div class="tema-card">
+
+        <h3>legend</h3>
+        <p>
+           La etiqueta <code>&lt;legend&gt;</code> se usa para agregar una leyenda o título a un grupo de elementos dentro de un campo <code>&lt;fieldset&gt;</code>. Es útil para describir el propósito del grupo de elementos dentro del fieldset.
+
+
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/legend.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <form>
+                    <fieldset>
+                        <legend id="titulo">Información</legend>
+                        Nombre: <input type="text" id="nombre">
+                        <br><br>
+                        <button type="button" onclick="cambiarTitulo()">
+                        Cambiar título</button>
+                    </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p> Con esto terminamos de trabajar con las etiquetas de formularios. esperamos que hayan sido útiles para entender cómo funcionan.</p>
+    
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo + descripción -->
+        <div class="footer-box">
+            <img id="logo-footer" src="img/logo2.png" alt="Logo HTML">
+            <p>Proyecto académico sobre las principales etiquetas de HTML.</p>
+        </div>
+
+        <!-- Enlaces del sitio -->
+        <div class="footer-box">
+            <h4>Enlaces</h4>
+            <a href="./Index.html">Inicio</a>
+            <a href="./EtiquetasSemanticas.html">Etiquetas Semánticas</a>
+            <a href="./Texto.html">Texto</a>
+            <a href="./Listas.html">Listas</a>
+            <a href="./Formularios.html">Formularios</a>
+            <a href="./Tablas.html">Tablas</a>
+            <a href="./Multimedia.html">Multimedia</a>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-box">
+            <h4>Redes Sociales</h4>
+            <a href="https://www.facebook.com/SENAHuila/">Facebook</a>
+            <a href="https://www.instagram.com/senacomunica/?hl=en">Instagram</a>
+            <a href="https://x.com/SENAComunica">Twitter</a>
+            <a href="https://www.youtube.com/@SENAComunica">YouTube</a>
+        </div>
+
+    </div>
+
+    <div class="footer-copy">
+        © 2026 - Todos los derechos reservados <br>
+        Desarrollado por Sharik y Justin
+    </div>
+
+</footer>
+<script src="Funcion.js"></script>
+
+</body>
+</html>
