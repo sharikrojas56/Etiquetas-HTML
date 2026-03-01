@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto y Contenido</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+<nav>
+    <h2>Etiquetas HTML</h2>
+    <a href="./Index.html">Inicio</a> |
+    <a href="./EtiquetasSemanticas.html">Etiquetas Semánticas</a> |
+    <a href="./Texto.html">Texto</a> |
+    <a href="Listas.html">Listas</a> |
+    <a href="#">Formularios</a> |
+    <a href="#">Tablas</a> |
+    <a href="#">Multimedia</a>
+</nav>
+
+<main class="container my-5" id="contenido-principal">
+
+   
+    <section id="hero">
+        <h1 id="titulo-principal">Texto </h1>
+        <p id="subtitulo-hero">
+           Aprende cómo se estructuran los textos en HTML mediante encabezados, párrafos y etiquetas de formato, 
+           fundamentales para organizar correctamente el contenido de una página web.
+        </p>
+        
+    </section>
+
+    <section id="introduccion">
+    <h2>Importancia del Texto en HTML </h2>
+    <p>
+        El texto es la base de cualquier página web. A través del texto se transmite la información principal al usuario, como títulos, descripciones, instrucciones y contenido educativo.
+        En HTML, el texto no se escribe simplemente para mostrarse en pantalla, sino que se organiza mediante etiquetas específicas que le dan estructura y significado. Esto permite:
+           <ul> 
+               <li> Organizar la información de manera clara.</li> 
+               <li> Facilitar la lectura.</li>
+               <li> Mejorar el posicionamiento en buscadores (SEO).</li>
+               <li> Hacer la página más accesible.</li>
+              
+           </ul> 
+        Por eso es fundamental usar correctamente las etiquetas de texto.
+    </p>    
+</section>
+
+<section id="Tipo-Encabezados">
+
+    <h2>Encabezados</h2>
+    <p>Los encabezados se utilizan para definir títulos y subtítulos dentro 
+        de una página web. Existen seis niveles, desde &lth1&gt; hasta &lth6 &gt;.</p>
+
+    <div class="tema-card">
+
+        <h3>&lth1&gt</h3>
+
+        <p>
+           Es el título más importante de la página. Representa la idea principal del contenido.
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/h1.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <img src="img/h1mira.png"
+                        class="img-fluid rounded shadow w-100">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+ 
+    <div class="tema-card">
+
+        <h3>&lth2&gt</h3>
+
+        <p>
+            Se usa para subtítulos principales dentro del contenido.
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/h2cod.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <br>
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <img src="img/h2ej.png"
+                        class="img-fluid rounded shadow w-100">
+                </div>
+
+            </div>
+        </div>
+
+
+  
+    </div>
+
+     <div class="tema-card">
+
+        <h3>&lth3&gt</h3>
+
+        <p>
+             Subtítulos dentro de un &lth2&gt.
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/h3cod.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <img src="img/h3.png"
+                        class="img-fluid rounded shadow w-100">
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+     <div class="tema-card">
+
+        <h3>&lt;h4&gt;, &lt;h5&gt; y &lt;h6&gt;.</h3>
+        <p>
+          Las etiquetas &lt;h4&gt;, &lt;h5&gt; y &lt;h6&gt; se utilizan cuando el contenido requiere una mayor profundidad 
+          estructural, es decir, cuando existen subtemas dentro de otros subtemas. 
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/h456.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <img src="img/h456cod.png"
+                        class="img-fluid rounded shadow w-100">
+                </div>
+
+            </div>
+            <p id="subtitulo-hero">
+            Importante: No se emplean para reducir el tamaño del texto, ya que el tamaño se controla con CSS. 
+            En páginas simples normalmente no se usan todos los niveles, pero en documentos extensos como 
+            manuales o investigaciones sí pueden ser necesarios para mantener una jerarquía organizada.
+        </p>
+        </div>
+
+    </div>
+
+    
+    <div class="tema-card">
+
+        <h3>Párrafo</h3>
+        <p>
+        La etiqueta &lt;p&gt; se utiliza para definir párrafos en HTML.<br>
+          Un párrafo representa un bloque de texto que desarrolla una idea específica dentro del contenido de la página.<br>
+          Cada bloque de información debe ir dentro de su propia etiqueta &lt;p&gt;, lo que permite mantener el texto organizado y mejorar la legibilidad.<br>
+          El navegador agrega automáticamente un espacio antes y después de cada párrafo para separar visualmente el contenido.
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/pcod.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <img src="img/pmira.png"
+                        class="img-fluid rounded shadow w-100">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+        <div class="tema-card">
+
+        <h3>Texto en Línea: &lt;span&gt;</h3>
+        <p>
+            La etiqueta &lt;span&gt; se utiliza para modificar una parte pequeña del texto dentro de un párrafo sin crear una nueva línea.
+            Sirve principalmente para aplicar estilos con CSS.
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/spancod.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <img src="img/span.png"
+                        class="img-fluid rounded shadow w-100">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+ 
+        <div class="tema-card">
+
+        <h3>Texto Importante: &lt;strong&gt;</h3>
+        <p>
+         La etiqueta &lt;strong&gt; Se utiliza para resaltar información clave dentro de un párrafo, como advertencias, términos técnicos o datos relevantes.
+         Es importante no abusar de esta etiqueta para evitar que el texto pierda su impacto visual.
+        </p>
+
+        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/strongcod.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <img src="img/strong.png"
+                        class="img-fluid rounded shadow w-100">
+                </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="tema-card">
+            <h3>Texto en Énfasis: &lt;em&gt;</h3>
+            <p>
+                La etiqueta &lt;em&gt; se utiliza para dar énfasis a una palabra o frase dentro de un texto.
+                Generalmente el navegador la muestra en cursiva, pero su función principal es indicar que
+                esa parte del contenido debe leerse con mayor intención o relevancia.
+                Se emplea cuando se quiere resaltar una idea importante dentro de un párrafo sin
+                convertirla en información principal. No debe utilizarse únicamente por apariencia visual,
+                sino cuando realmente se desea enfatizar un fragmento del texto.
+            </p>
+
+            <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-md-6 mb-4">
+                        <h5 class="text-center">Código HTML:</h5>
+                        <img src="img/emcod.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                    </div> 
+
+                    <div class="col-12 col-md-6 mb-4">
+                        <h5 class="text-center">Resultado:</h5>
+                        <img src="img/em.png" class="img-fluid rounded shadow w-100">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tema-card">
+        <h3>Salto de Línea: &lt;br&gt;</h3>
+        <p>
+            La etiqueta &lt;br&gt; se utiliza para insertar un salto de línea dentro de un mismo párrafo 
+            sin crear un nuevo bloque de texto. Es útil cuando se necesita separar información corta 
+            como direcciones, poemas, datos personales o listas simples.
+            A diferencia de la etiqueta &lt;p&gt;, el &lt;br&gt no genera un espacio grande entre bloques, 
+            solo mueve el contenido a la siguiente línea. No se recomienda abusar de esta etiqueta 
+            para crear espacios visuales, ya que el diseño y los márgenes deben manejarse con CSS.
+       </p>
+       <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+       <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Código HTML:</h5>
+                    <img src="img/brcod.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                </div> 
+                <div class="col-12 col-md-6 mb-4">
+                    <h5 class="text-center">Resultado:</h5>
+                    <img src="img/br.png"
+                        class="img-fluid rounded shadow w-100">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="tema-card">
+        <h3>Línea Horizontal: &lt;hr&gt;</h3>
+            <p>
+              etiqueta &lt;hr&gt; se utiliza para insertar una línea horizontal que permite
+              dividir visualmente el contenido dentro de una página web.
+              Su función es marcar una separación temática entre secciones o bloques de información.
+              No contiene texto y se representa como una línea divisoria.
+              Es útil cuando se desea indicar un cambio de tema o separar contenidos relacionados.
+            </p>
+
+                <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 col-md-6 mb-4">
+                            <h5 class="text-center">Código HTML:</h5>
+                            <img src="img/hrcod.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                        </div> 
+
+                    <div class="col-12 col-md-6 mb-4">
+                        <h5 class="text-center">Resultado:</h5>
+                        <img src="img/hr.png" class="img-fluid rounded shadow w-100">
+                    </div>
+
+                </div>
+           </div>
+      </div>
+   </div>
+
+   <p>
+        Con esto finalizamos el tema de Texto en HTML.Esperamos que esta explicación te haya ayudado a comprender
+        la importancia de organizar y estructurar correctamente la información
+        dentro de una página web.
+    </p>
+</section>
+    
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo + descripción -->
+        <div class="footer-box">
+            <img id="logo-footer" src="img/logo2.png" alt="Logo HTML">
+            <p>Proyecto académico sobre las principales etiquetas de HTML.</p>
+        </div>
+
+        <!-- Enlaces del sitio -->
+        <div class="footer-box">
+            <h4>Enlaces</h4>
+            <a href="./Index.html">Inicio</a>
+            <a href="./EtiquetasSemanticas.html">Etiquetas Semánticas</a>
+            <a href="./Texto.html">Texto</a>
+            <a href="Listas.html">Listas</a>
+            <a href="#">Formularios</a>
+            <a href="#">Tablas</a>
+            <a href="#">Multimedia</a>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-box">
+            <h4>Redes Sociales</h4>
+            <a href="https://www.facebook.com/SENAHuila/">Facebook</a>
+            <a href="https://www.instagram.com/senacomunica/?hl=en">Instagram</a>
+            <a href="https://x.com/SENAComunica">Twitter</a>
+            <a href="https://www.youtube.com/@SENAComunica">YouTube</a>
+        </div>
+
+    </div>
+
+    <div class="footer-copy">
+        © 2026 - Todos los derechos reservados <br>
+        Desarrollado por Sharik y Justin
+    </div>
+
+</footer>
+
+</body>
+</html>
