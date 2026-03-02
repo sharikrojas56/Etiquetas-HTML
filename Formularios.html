@@ -177,227 +177,365 @@
         •	submit
         -->
 
-    <!-- TEXT -->  
+ <!-- TEXT -->  
     <div class="tema-card">
+    <h3>text</h3>
+    <p>
+        El tipo <code>&lt;input type="text"&gt;</code> permite ingresar texto.
+        En este ejemplo escribiremos el nombre de una mascota y lo mostraremos en pantalla.
+    </p>
 
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <h3>text</h3>
-        <p>
-           ....
-        </p>
+    <div class="container">
+        <div class="row">
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+               <h5 class="text-center">Código HTML:</h5>
+               <pre class="codigo-html">
+                    &lt;label for="mascota"&gt;Nombre de la mascota:&lt;/label&gt;
+                    &lt;input type="text" id="mascota"&gt;
+                    &lt;button type="button" onclick="mostrarMascota()"&gt;Mostrar&lt;/button&gt;
+                    &lt;p id="resultadoMascota"&gt;&lt;/p&gt;
+                </pre>
+          </div>
 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                </div>
-
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Resultado:</h5>
+                <label for="mascota">Nombre de la mascota:</label>
+                <input type="text" id="mascota">
+                <button type="button" onclick="mostrarMascota()">Mostrar</button>
+                <p id="resultadoMascota"></p>
             </div>
-        </div>     
+
+        </div>
     </div>
+</div>
 
      <!-- EMAIL -->  
     <div class="tema-card">
+    <h3>Email</h3>
+    <p>
+        El tipo <code>&lt;input type="email"&gt;</code> permite ingresar un correo electrónico.
+    </p>
 
-        <h3>email</h3>
-        <p>
-           ....
-        </p>
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                </div>
+            <div class="col-12 col-md-6 mb-4">
+              <h5 class="text-center">Código HTML:</h5>
+              <pre class="codigo-html">
+                    &lt;label for="correo"&gt;Correo electrónico:&lt;/label&gt;
+                    &lt;input type="email" id="correo"&gt;
+                    &lt;button type="button" onclick="mostrarCorreo()"&gt;Mostrar&lt;/button&gt;
+                    &lt;p id="resultadoCorreo"&gt;&lt;/p&gt;
+               </pre>
+           </div>
 
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Resultado:</h5>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo">
+                <button type="button" onclick="mostrarCorreo()">Mostrar</button>
+                <p id="resultadoCorreo"></p>
             </div>
-        </div>     
-    </div>
 
-     <!-- PASSWORD -->  
+        </div>
+    </div>
+</div>
+
+
+<!-- PASSWORD -->  
 
     <div class="tema-card">
+    <h3>Contraseña</h3>
+    <p>
+        El tipo <code>&lt;input type="password"&gt;</code> permite ingresar una contraseña.  
+        Aquí validaremos que no esté vacía y mostraremos la longitud de caracteres.
+    </p>
 
-        <h3>password</h3>
-        <p>
-           ....
-        </p>
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                </div>
-
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Código HTML:</h5>
+                <pre class="codigo-html">
+                    &lt;label for="password"&gt;Contraseña:&lt;/label&gt;
+                    &lt;input type="password" id="password" placeholder="Escribe tu contraseña"&gt;
+                    &lt;button type="button" onclick="mostrarPassword()"&gt;Mostrar&lt;/button&gt;
+                    &lt;p id="resultadoPassword"&gt;&lt;/p&gt;
+                </pre>
             </div>
-        </div>     
+
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Resultado:</h5>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Escribe tu contraseña">
+                <button type="button" onclick="mostrarPassword()">Mostrar</button>
+                <p id="resultadoPassword"></p>
+            </div>
+
+        </div>
     </div>
+</div>
 
      <!-- NUMBER -->  
 
-    <div class="tema-card">
+<div class="tema-card">
+    <h3>number</h3>
+    <p>
+        El tipo <code>&lt;input type="number"&gt;</code> permite ingresar números.  
+        En este ejemplo validaremos que la edad esté entre 1 y 120.
+    </p>
 
-        <h3>number</h3>
-        <p>
-           ....
-        </p>
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                </div>
-
+            <!-- Código HTML (solo para mostrar) -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Código HTML:</h5>
+                <pre class="codigo-html">
+                    &lt;label for="edad"&gt;Edad:&lt;/label&gt;
+                    &lt;input type="number" id="edad" min="1" max="120" placeholder="Ingresa tu edad"&gt;
+                    &lt;button type="button" onclick="mostrarEdad()"&gt;Mostrar&lt;/button&gt;
+                    &lt;p id="resultadoEdad"&gt;&lt;/p&gt;
+                </pre>
             </div>
-        </div>     
+
+            <!-- Resultado funcional -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Resultado:</h5>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" min="1" max="120" placeholder="Ingresa tu edad">
+                <button type="button" onclick="mostrarEdad()">Mostrar</button>
+                <p id="resultadoEdad"></p>
+            </div>
+
+        </div>
     </div>
+</div>
 
     <!-- DATE -->
     <div class="tema-card">
+    <h3>date</h3>
+    <p>
+        El tipo <code>&lt;input type="date"&gt;</code> permite seleccionar una fecha.  
+        En este ejemplo validaremos que el usuario seleccione una fecha antes de mostrarla.
+    </p>
 
-        <h3>date</h3>
-        <p>
-           ....
-        </p>
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                </div>
-
+            <!-- Código HTML (solo para mostrar) -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Código HTML:</h5>
+                <pre class="codigo-html">
+                    &lt;label for="fecha"&gt;Fecha de nacimiento:&lt;/label&gt;
+                    &lt;input type="date" id="fecha"&gt;
+                    &lt;button type="button" onclick="mostrarFecha()"&gt;Mostrar&lt;/button&gt;
+                    &lt;p id="resultadoFecha"&gt;&lt;/p&gt;
+                </pre>
             </div>
-        </div>     
-    </div>
 
-        <!-- RADIO -->
-    <div class="tema-card">
-
-        <h3>radio</h3>
-        <p>
-           ....
-        </p>
-
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                </div>
-
+            <!-- Resultado funcional -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Resultado:</h5>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha">
+                <button type="button" onclick="mostrarFecha()">Mostrar</button>
+                <p id="resultadoFecha"></p>
             </div>
-        </div>     
+
+        </div>
     </div>
+</div>
+
+    <!-- RADIO -->
+<div class="tema-card">
+    <h3>radio</h3>
+    <p>
+        El tipo <code>&lt;input type="radio"&gt;</code> permite seleccionar una opción de un grupo.  
+        En este ejemplo validaremos que el usuario seleccione un género.
+    </p>
+
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+
+    <div class="container">
+        <div class="row">
+
+         
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Código HTML:</h5>
+                <pre class="codigo-html">
+                    &lt;p&gt;Género:&lt;/p&gt;
+                    &lt;input type="radio" id="masculino" name="genero" value="Masculino"&gt;
+                    &lt;label for="masculino"&gt;Masculino&lt;/label&gt;
+                    &lt;input type="radio" id="femenino" name="genero" value="Femenino"&gt;
+                    &lt;label for="femenino"&gt;Femenino&lt;/label&gt;
+                    &lt;br&gt;
+                    &lt;button type="button" onclick="mostrarGenero()"&gt;Mostrar&lt;/button&gt;
+                    &lt;p id="resultadoGenero"&gt;&lt;/p&gt;
+                </pre>
+            </div>
+
+            <!-- Resultado funcional -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Resultado:</h5>
+                <p>Género:</p>
+                <input type="radio" id="masculino" name="genero" value="Masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="Femenino">
+                <label for="femenino">Femenino</label>
+                <br><br>
+                <button type="button" onclick="mostrarGenero()">Mostrar</button>
+                <p id="resultadoGenero"></p>
+            </div>
+
+        </div>
+    </div>
+</div>
 
         <!-- CHECKBOX -->
-    <div class="tema-card">
+ <div class="tema-card">
+    <h3>checkbox</h3>
+    <p>
+        El tipo <code>&lt;input type="checkbox"&gt;</code> permite seleccionar **una o varias opciones**.  
+        En este ejemplo validaremos que el usuario seleccione al menos un hobby.
+    </p>
 
-        <h3>checkbox</h3>
-        <p>
-           ....
-        </p>
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                </div>
-
+            <!-- Código HTML (solo para mostrar) -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Código HTML:</h5>
+                <pre class="codigo-html">
+                    &lt;p&gt;Hobbies:&lt;/p&gt;
+                    &lt;input type="checkbox" id="futbol" name="hobby" value="Fútbol"&gt;
+                    &lt;label for="futbol"&gt;Fútbol&lt;/label&gt;
+                    &lt;input type="checkbox" id="musica" name="hobby" value="Música"&gt;
+                    &lt;label for="musica"&gt;Música&lt;/label&gt;
+                    &lt;input type="checkbox" id="lectura" name="hobby" value="Lectura"&gt;
+                    &lt;label for="lectura"&gt;Lectura&lt;/label&gt;
+                    &lt;br&gt;
+                    &lt;button type="button" onclick="mostrarHobbies()"&gt;Mostrar&lt;/button&gt;
+                    &lt;p id="resultadoHobbies"&gt;&lt;/p&gt;
+                </pre>
             </div>
-        </div>     
-    </div>
 
+            <!-- Resultado funcional -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Resultado:</h5>
+                <p>Hobbies:</p>
+                <input type="checkbox" id="futbol" name="hobby" value="Fútbol">
+                <label for="futbol">Fútbol</label>
+                <input type="checkbox" id="musica" name="hobby" value="Música">
+                <label for="musica">Música</label>
+                <input type="checkbox" id="lectura" name="hobby" value="Lectura">
+                <label for="lectura">Lectura</label>
+                <br><br>
+                <button type="button" onclick="mostrarHobbies()">Mostrar</button>
+                <p id="resultadoHobbies"></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+   
      <!-- FILE -->
     <div class="tema-card">
+    <h3>file</h3>
+    <p>
+        El tipo <code>&lt;input type="file"&gt;</code> permite subir archivos desde tu computadora.  
+        En este ejemplo validaremos que el usuario seleccione un archivo antes de mostrarlo.
+    </p>
 
-        <h3>file</h3>
-        <p>
-           ....
-        </p>
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                </div>
-
+            <!-- Código HTML (solo para mostrar) -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Código HTML:</h5>
+                <pre class="codigo-html">
+                    &lt;label for="archivo"&gt;Selecciona un archivo:&lt;/label&gt;
+                    &lt;input type="file" id="archivo"&gt;
+                    &lt;button type="button" onclick="mostrarArchivo()"&gt;Mostrar&lt;/button&gt;
+                    &lt;p id="resultadoArchivo"&gt;&lt;/p&gt;
+                </pre>
             </div>
-        </div>     
+
+            <!-- Resultado funcional -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Resultado:</h5>
+                <label for="archivo">Selecciona un archivo:</label>
+                <input type="file" id="archivo">
+                <button type="button" onclick="mostrarArchivo()">Mostrar</button>
+                <p id="resultadoArchivo"></p>
+            </div>
+
+        </div>
     </div>
+</div>
 
      <!-- SUBMIT -->
     <div class="tema-card">
+    <h3>submit + file</h3>
+    <p>
+        Este ejemplo combina un <code>input type="file"</code> con un <code>submit</code>.  
+        Al presionar “Enviar” se muestra el nombre del archivo seleccionado y su vista previa, sin recargar la página.
+    </p>
 
-        <h3>submit</h3>
-        <p>
-           ....
-        </p>
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="#" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                </div>
-
+            <!-- Código HTML (solo para mostrar) -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Código HTML:</h5>
+                <pre class="codigo-html">
+                    &lt;form id="formArchivo"&gt;
+                        &lt;label for="miArchivo"&gt;Selecciona una imagen:&lt;/label&gt;
+                        &lt;input type="file" id="miArchivo" accept="image/*"&gt;
+                        &lt;br&gt;&lt;br&gt;
+                        &lt;input type="submit" value="Enviar"&gt;
+                    &lt;/form&gt;
+                    &lt;p id="mensajeArchivo"&gt;&lt;/p&gt;
+                    &lt;img id="vistaPrevia" style="max-width:200px; display:none;"&gt;
+                </pre>
             </div>
-        </div>     
-    </div>
-    </div>
 
+            <!-- Resultado funcional -->
+            <div class="col-12 col-md-6 mb-4">
+                <h5 class="text-center">Resultado:</h5>
+                <form id="formArchivo">
+                    <label for="miArchivo">Selecciona una imagen:</label>
+                    <input type="file" id="miArchivo" accept="image/*">
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <p id="mensajeArchivo"></p>
+                <img id="vistaPrevia" style="max-width:200px; display:none;">
+            </div>
 
+        </div>
+    </div>
+</div>
+   
+
+    
 
 
     <!-- dl -->
