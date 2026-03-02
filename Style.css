@@ -350,3 +350,13 @@ h1 {
     max-width: 100% !important;
     height: auto;
 }
+.codigo-html {
+    background-color: #1e1e1e; /* fondo oscuro como VS Code */
+    color: #d4d4d4; /* color de texto */
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Fira Code', 'Consolas', monospace; /* fuente monoespaciada */
+    font-size: 14px;
+    overflow-x: auto; /* scroll horizontal si el código es largo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
