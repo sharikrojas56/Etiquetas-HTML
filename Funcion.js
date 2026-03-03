@@ -13,7 +13,7 @@ formulario.addEventListener("submit", function(event) {
 // ETIQUETA LABEL
 function mostrarEdad() {
   const edad = document.getElementById("edad").value;
-  document.getElementById("resultado").textContent =
+  document.getElementById("resultadoEdad").textContent =
     "Tu edad es: " + edad;
 }
 
