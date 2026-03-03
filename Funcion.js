@@ -246,3 +246,25 @@ function cambiarTitulo() {
     document.getElementById("titulo").textContent = "Datos Registrados";
 }
 // FIN ETIQUETA LEGEND
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const btnUp = document.getElementById("scrollUp");
+    const btnDown = document.getElementById("scrollDown");
+
+    btnUp.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    btnDown.addEventListener("click", function () {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: "smooth"
+        });
+    });
+
+});
