@@ -355,6 +355,27 @@ h1 {
     height: auto;
 }
 
+
+
+
+pre.codigo-html {
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    word-break: break-all; 
+    width: 100%;
+    max-width: 100%;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Courier New', monospace;
+    padding: 1.5rem; 
+    border-radius: 0.5rem;
+    overflow-wrap: anywhere; 
+    box-sizing: border-box;
+    font-size: clamp(0.7rem, 2vw, 0.9rem); 
+    display: block; 
+}
+
+
 .scroll-btn {
     position: fixed;
     right: 20px;

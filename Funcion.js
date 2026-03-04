@@ -76,15 +76,16 @@ function mostrarPassword() {
         resultado.textContent = "La contraseña debe tener al menos 6 caracteres.";
         resultado.style.color = "orange";
     } else {
-        resultado.textContent = `Contraseña válida ✅ (Longitud: ${password.length} caracteres)`;
+        resultado.textContent = `Contraseña válida (Longitud: ${password.length} caracteres)`;
         resultado.style.color = "green";
     }
 }
 
 //number
+
 function mostrarEdad() {
-    const input = document.getElementById("edad").value;
-    const resultado = document.getElementById("resultadoEdad");
+    const input = document.getElementById("edadInput").value;
+    const resultado = document.getElementById("resultadoEdadOutput");
 
     if (input === "" || input === null) {
         resultado.textContent = "Por favor ingresa tu edad.";
@@ -98,7 +99,7 @@ function mostrarEdad() {
         resultado.textContent = "Ingresa una edad válida entre 1 y 120.";
         resultado.style.color = "orange";
     } else {
-        resultado.textContent = `Tu edad es: ${edad} años ✅`;
+        resultado.textContent = `Tu edad es: ${edad} años`;
         resultado.style.color = "green";
     }
 }
@@ -115,7 +116,7 @@ function mostrarFecha() {
     } else {
         // Separar año, mes y día
         const [anio, mes, dia] = fecha.split("-");
-        resultado.textContent = `La fecha seleccionada es: ${dia}/${mes}/${anio} ✅`;
+        resultado.textContent = `La fecha seleccionada es: ${dia}/${mes}/${anio} `;
         resultado.style.color = "green";
     }
 }
@@ -130,7 +131,7 @@ function mostrarGenero() {
         resultado.textContent = "Por favor selecciona un género.";
         resultado.style.color = "red";
     } else {
-        resultado.textContent = `Has seleccionado: ${generoSeleccionado.value} ✅`;
+        resultado.textContent = `Has seleccionado: ${generoSeleccionado.value} `;
         resultado.style.color = "green";
     }
 }
@@ -146,7 +147,7 @@ function mostrarHobbies() {
         resultado.style.color = "red";
     } else {
         const seleccion = Array.from(checkboxes).map(cb => cb.value).join(", ");
-        resultado.textContent = `Has seleccionado: ${seleccion} ✅`;
+        resultado.textContent = `Has seleccionado: ${seleccion} `;
         resultado.style.color = "green";
     }
 }
@@ -162,7 +163,7 @@ function mostrarArchivo() {
         resultado.style.color = "red";
     } else {
         const nombreArchivo = input.files[0].name;
-        resultado.textContent = `Archivo seleccionado: ${nombreArchivo} ✅`;
+        resultado.textContent = `Archivo seleccionado: ${nombreArchivo} `;
         resultado.style.color = "green";
     }
 }
@@ -183,7 +184,7 @@ document.getElementById("formArchivo").addEventListener("submit", function(event
         vista.style.display = "none";
     } else {
         const archivo = input.files[0];
-        mensaje.textContent = `Archivo seleccionado: ${archivo.name} ✅`;
+        mensaje.textContent = `Archivo seleccionado: ${archivo.name} `;
         mensaje.style.color = "green";
 
         // Mostrar vista previa
@@ -246,6 +247,7 @@ function cambiarTitulo() {
     document.getElementById("titulo").textContent = "Datos Registrados";
 }
 // FIN ETIQUETA LEGEND
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
