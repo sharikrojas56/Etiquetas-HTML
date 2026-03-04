@@ -127,8 +127,8 @@ section ul li {
 
 /* TABLA DE CONTENIDO */
 #tabla-contenido ul {
-    list-style: none;
-    padding-left: 0;
+    list-style: disc;
+    padding-left: 20px;
 }
 
 #tabla-contenido ul li {
