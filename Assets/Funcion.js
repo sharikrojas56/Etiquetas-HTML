@@ -270,3 +270,70 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+// FORMULARIO DE REGISTRO
+
+document.getElementById("formRegistro").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let nombre = document.getElementById("nombreCompleto").value;
+    let correo = document.getElementById("correoRegistro").value;
+    let password = document.getElementById("passwordRegistro").value;
+    let edad = document.getElementById("edadRegistro").value;
+    let pais = document.getElementById("paisRegistro").value;
+    let comentario = document.getElementById("comentarioRegistro").value;
+
+    let genero = document.querySelector('input[name="generoRegistro"]:checked');
+
+    let hobbies = [];
+    document.querySelectorAll(".hobby:checked").forEach(function(h){
+        hobbies.push(h.value);
+    });
+
+    if(nombre === "" || correo === "" || password === "" || edad === ""){
+        document.getElementById("mensajeRegistro").innerHTML = 
+        " Por favor completa los campos obligatorios";
+        document.getElementById("mensajeRegistro").style.color = "red";
+        return;
+    }
+
+    document.getElementById("mensajeRegistro").innerHTML =
+    "Registro completado correctamente <br><br>" +
+    "<strong>Nombre:</strong> " + nombre + "<br>" +
+    "<strong>Correo:</strong> " + correo + "<br>" +
+    "<strong>Edad:</strong> " + edad + "<br>" +
+    "<strong>Género:</strong> " + (genero ? genero.value : "No seleccionado") + "<br>" +
+    "<strong>Hobbies:</strong> " + hobbies.join(", ") + "<br>" +
+    "<strong>País:</strong> " + pais + "<br>" +
+    "<strong>Comentario:</strong> " + comentario;
+
+    document.getElementById("mensajeRegistro").style.color = "green";
+
+});
+
+
+// VISTA PREVIA DE IMAGEN
+
+document.getElementById("fotoRegistro").addEventListener("change", function(){
+
+    let archivo = this.files[0];
+
+    if(archivo){
+
+        let lector = new FileReader();
+
+        lector.onload = function(e){
+
+            let imagen = document.getElementById("previewImagen");
+
+            imagen.src = e.target.result;
+
+            imagen.style.display = "block";
+        };
+
+        lector.readAsDataURL(archivo);
+    }
+
+});
