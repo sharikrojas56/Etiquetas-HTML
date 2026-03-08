@@ -337,3 +337,10 @@ document.getElementById("fotoRegistro").addEventListener("change", function(){
     }
 
 });
+
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("show");
+ }
+
+
+ 

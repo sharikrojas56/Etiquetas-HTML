@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <title>Listas</title>
-    <link rel="stylesheet" href="/Assets/Style.css">
+    <link rel="stylesheet" href="../Assets/Style.css">
 </head>
 <body>
     <!-- NAV -->
 <nav>
     <h2>Etiquetas HTML</h2>
-    <a href="/Index.html">Inicio</a> |
-    <a href="/Categorias/EtiquetasSemanticas.html">Etiquetas Semánticas</a> |
-    <a href="/Categorias/Texto.html">Texto</a> |
-    <a href="/Categorias/Listas.html">Listas</a> |
-    <a href="/Categorias/Formularios.html">Formularios</a> |
-    <a href="/Categorias/Tablas.HTML">Tablas</a> |
-    <a href="/Categorias/Multimedia.html">Multimedia</a>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="../Index.html">Inicio</a>
+        <a href="EtiquetasSemanticas.html">Etiquetas Semánticas</a>
+        <a href="Texto.html">Texto</a>
+        <a href="Listas.html">Listas</a>
+        <a href="Formularios.html">Formularios</a>
+        <a href="Tablas.html">Tablas</a>
+        <a href="Multimedia.html">Multimedia</a>
+    </div>
 </nav>
 
 <main class="container my-5" id="contenido-principal">
@@ -55,21 +62,27 @@
 
         <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <div class="container">
-            <div class="row">
+        <div class="container ejemplo-box">
+        <div class="row justify-content-center gap-5">
 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="/img/ul.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                    <img src="/img/ul pagina.png"
-                        class="img-fluid rounded shadow w-100">
+                <!-- TABLA CÓDIGO -->
+                <div class="col-12 col-md-5">
+                    <div class="tabla-ejemplo">
+                        <h5>Código HTML</h5>
+                        <img src="../img/ul.png" class="img-fluid">
+                    </div>
                 </div>
 
-            </div>
+                <!-- TABLA RESULTADO -->
+                <div class="col-12 col-md-5">
+                    <div class="tabla-ejemplo">
+                        <h5>Resultado</h5>
+                        <img src="../img/ul pagina.png" class="img-fluid">
+                    </div>
+             </div>
+
         </div>
+    </div>
 
         <p id="subtitulo-hero">
             Importante: Estas etiquetas se verian más completas si se les agregara diseño con CSS, pero el objetivo de estos ejemplos es mostrar su estructura y función.
@@ -79,133 +92,152 @@
 
 
     <!--ol-->
-    <div class="tema-card">
+<div class="tema-card ejemplo-box">
 
-        <h3>ol</h3>
+    <h3>ol</h3>
 
-        <p>
-            La etiqueta <code>&lt;ol&gt;</code> significa lista ordenada (ordered list). <br>Se usa para mostrar elementos en forma de lista numerada, cuando el orden es importante.
-        </p>
+    <p>
+        La etiqueta <code>&lt;ol&gt;</code> significa lista ordenada (ordered list). <br>
+        Se usa para mostrar elementos en forma de lista numerada, cuando el orden es importante.
+    </p>
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row justify-content-center g-4">
 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="/img/codigo ol.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                    <img src="/img/ol.png"
-                        class="img-fluid rounded shadow w-100">
+            <!-- TABLA CÓDIGO -->
+            <div class="col-12 col-md-6">
+                <div class="tabla-ejemplo">
+                    <h5>Código HTML</h5>
+                    <img src="/img/codigo ol.png" class="img-fluid rounded shadow">
                 </div>
-
-                
-
             </div>
-        </div>
 
+            <!-- TABLA RESULTADO -->
+            <div class="col-12 col-md-6">
+                <div class="tabla-ejemplo">
+                    <h5>Resultado</h5>
+                    <img src="/img/ol.png" class="img-fluid rounded shadow">
+                </div>
+            </div>
 
+        </div> <br><br><br><br>
+    </div> 
+
+</div>
     <!--il-->
-    </div>
+    <div class="tema-card p-4 mb-4 shadow-sm rounded">
 
-     <div class="tema-card">
+    <h3>li</h3>
 
-        <h3>li</h3>
+    <p>
+        La etiqueta <code>&lt;li&gt;</code> se utiliza para definir un elemento de una lista en HTML. 
+        Se usa dentro de las etiquetas <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code> para crear elementos individuales de una lista.
+    </p>
 
-        <p>
-            La etiqueta <code>&lt;li&gt;</code> se utiliza para definir un elemento de una lista en HTML. Se usa dentro de las etiquetas <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code> para crear elementos individuales de una lista.
-        </p>
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+    <div class="container ejemplo-box">
+    <div class="row justify-content-center g-4">
 
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="/img/codigo il.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                    <img src="/img/il.png"
-                        class="img-fluid rounded shadow w-100">
-                </div>
-
-            <p id="subtitulo-hero">
-                    En pocas palabras: 
-                    &lt;li&gt; es cada ítem o punto dentro de una lista.
-            </p>
-
+        <!-- Código HTML -->
+        <div class="col-12 col-md-5">
+            <div class="tabla-ejemplo p-3 h-100">
+                <h5 class="text-center">Código HTML</h5>
+                <img src="/img/codigo il.png" class="img-fluid rounded shadow w-100">
             </div>
         </div>
 
-
+        <!-- Resultado -->
+        <div class="col-12 col-md-5">
+            <div class="tabla-ejemplo p-3 h-100">
+                <h5 class="text-center">Resultado</h5>
+                <img src="/img/il.png" class="img-fluid rounded shadow w-100">
+            </div>
+        </div>
+     </div>
     </div>
 
-    </div>
+    <p id="subtitulo-hero" class="mt-3">
+        En pocas palabras: &lt;li&gt; es cada ítem o punto dentro de una lista.
+    </p>
+
+</div>
+
+</div> <!-- fin tema-card -->
 
 
     <!-- dl -->
-     <div class="tema-card">
+<div class="tema-card p-4 mb-4 shadow-sm rounded">
+    <h3>dl</h3>
+    <p>
+        La etiqueta <code>&lt;dl&gt;</code> significa lista de descripción (description list). 
+        Se usa para mostrar una lista de términos y su explicación.
+    </p>
 
-        <h3>dl</h3>
-        <p>
-           La etiqueta &lt;dl&gt; significa lista de descripción (description list). Se usa para mostrar una lista de términos y su explicación. No usa números ni viñetas. Dentro de &lt;dl&gt; se usan:<br>
-            &lt;dt&gt; → el término<br>
-            &lt;dd&gt; → la descripción
-        </p>
+    <h4 class="text-center my-4">Ejemplo de uso:</h4>
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Código HTML:</h5>
-                    <img src="/img/dl codigo.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                    <img src="/img/dl.png"
-                        class="img-fluid rounded shadow w-100">
+    <div class="container-fluid">
+        <div class="row gy-5 gx-md-5 justify-content-center align-items-stretch">
+            
+            <div class="col-12 col-md-6">
+                <div class="tabla-ejemplo h-100 shadow-sm border p-3">
+                    <h5 class="mb-3">Código HTML</h5>
+                    <img src="/img/dl codigo.png" class="img-fluid rounded" alt="Código HTML">
                 </div>
-
             </div>
-        </div>
 
-    </div>
+            <div class="col-12 col-md-6">
+                <div class="tabla-ejemplo h-100 shadow-sm border p-3">
+                    <h5 class="mb-3">Resultado</h5>
+                    <img src="/img/dl.png" class="img-fluid rounded" alt="Resultado visual">
+                </div>
+            </div>
+
+        </div> 
+    </div> 
+
+    <p id="subtitulo-hero" class="mt-5 text-center px-3">
+        Con estas etiquetas de listas puedes organizar mejor tu contenido en HTML; es muy útil para estructurar información de manera clara y legible.
+    </p>
+</div>
+
+
 
     <!--dt y dd-->
-    <div class="tema-card">
+    <div class="tema-card ejemplo-box">
 
-        <h3>dt y dd</h3>
-        <p>
-           La etiqueta <code>&lt;dt&gt;</code> define un término en una lista de descripción, mientras que <code>&lt;dd&gt;</code> define la descripción de ese término. Ambas se usan dentro de una etiqueta <code>&lt;dl&gt;</code>.
+    <h3>dt y dd</h3>
+    <p>
+       La etiqueta <code>&lt;dt&gt;</code> define un término en una lista de descripción, mientras que <code>&lt;dd&gt;</code> define la descripción de ese término. Ambas se usan dentro de una etiqueta <code>&lt;dl&gt;</code>.
+    </p>
 
-        </p>
+    <h4 class="text-center mb-4">Ejemplo de uso:</h4>
+    <div class="container">
+        <div class="row justify-content-center">
 
-        <h4 class="text-center mb-4">Ejemplo de uso:</h4>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12 col-md-6 mb-4">
+            <div class="col-12 col-md-5 mb-4">
+                <div class="tabla-ejemplo">
                     <h5 class="text-center">Código HTML:</h5>
-                    <img src="/img/codigo dd y dt.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
-                </div> 
-                <div class="col-12 col-md-6 mb-4">
-                    <h5 class="text-center">Resultado:</h5>
-                    <img src="/img/dt y dd.png"
-                        class="img-fluid rounded shadow w-100">
+                    <img src="/img/codigo dd y dt.png" class="img-fluid rounded shadow">
                 </div>
+            </div> 
 
+            <div class="col-12 col-md-5 mb-4">
+                <div class="tabla-ejemplo">
+                    <h5 class="text-center">Resultado:</h5>
+                    <img src="/img/dt y dd.png" class="img-fluid rounded shadow">
+                </div>
             </div>
-        </div>
 
+        </div>
+        <br>
     </div>
-     <p> Con estas etiquetas de listas puedes organizar mejor tu contenido en HTML, es muy útil para estructurar información de manera clara y legible.</p>
-    
+
+    <br><p>Con estas etiquetas de listas puedes organizar mejor tu contenido en HTML; es muy útil para estructurar información de manera clara y legible.</p>
+
+</div>
 </section>
 </main>
 
@@ -224,12 +256,12 @@
         <div class="footer-box">
             <h4>Enlaces</h4>
             <a href="./Index.html">Inicio</a>
-            <a href="/Categorias/EtiquetasSemanticas.html">Etiquetas Semánticas</a>
-            <a href="/Categorias/Texto.html">Texto</a>
-            <a href="/Categorias/Listas.html">Listas</a>
-            <a href="/Categorias/Formularios.html">Formularios</a>
-            <a href="/Categorias/Tablas.html">Tablas</a>
-            <a href="/Categorias/Multimedia.html">Multimedia</a>
+            <a href="EtiquetasSemanticas.html">Etiquetas Semánticas</a>
+            <a href="Texto.html">Texto</a>
+            <a href="Listas.html">Listas</a>
+            <a href="Formularios.html">Formularios</a>
+            <a href="Tablas.html">Tablas</a>
+            <a href="Multimedia.html">Multimedia</a>
         </div>
 
         <!-- Redes sociales -->
@@ -249,6 +281,7 @@
     </div>
 
 </footer>
+
 
 <script src="/Assets/Funcion.js"></script>
 </body>

@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <title>Etiquetas Semánticas</title>
-    <link rel="stylesheet" href="/Assets/Style.css">
+    <link rel="stylesheet" href="../Assets/Style.css">
 </head>
 <body>
     <!-- NAV -->
 <nav>
     <h2>Etiquetas HTML</h2>
-    <a href="/Index.html">Inicio</a> |
-    <a href="/Categorias/EtiquetasSemanticas.html">Etiquetas Semánticas</a> |
-    <a href="/Categorias/Texto.html">Texto</a> |
-    <a href="/Categorias/Listas.html">Listas</a> |
-    <a href="/Categorias/Formularios.html">Formularios</a> |
-    <a href="/Categorias/Tablas.HTML">Tablas</a> |
-    <a href="/Categorias/Multimedia.html">Multimedia</a>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="../Index.html">Inicio</a>
+        <a href="EtiquetasSemanticas.html">Etiquetas Semánticas</a>
+        <a href="Texto.html">Texto</a>
+        <a href="Listas.html">Listas</a>
+        <a href="Formularios.html">Formularios</a>
+        <a href="Tablas.html">Tablas</a>
+        <a href="Multimedia.html">Multimedia</a>
+    </div>
 </nav>
 
 <main class="container my-5" id="contenido-principal">
@@ -58,11 +65,11 @@
 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Código HTML:</h5>
-                    <img src="/img/Codigo Header.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
+                    <img src="../img/Codigo Header.png" class="img-fluid rounded shadow" style="max-width: 100%; width: 100%;">
                 </div> 
                 <div class="col-12 col-md-6 mb-4">
                     <h5 class="text-center">Resultado:</h5>
-                    <img src="/img/Header.png"
+                    <img src="../img/Header.png"
                         class="img-fluid rounded shadow w-100">
                 </div>
 
@@ -257,7 +264,7 @@
 
         <!-- Logo + descripción -->
         <div class="footer-box">
-            <img id="logo-footer" src="/img/logo2.png" alt="Logo HTML">
+            <img id="logo-footer" src="img/logo2.png" alt="Logo HTML">
             <p>Proyecto académico sobre las principales etiquetas de HTML.</p>
         </div>
 
@@ -265,12 +272,12 @@
         <div class="footer-box">
             <h4>Enlaces</h4>
             <a href="./Index.html">Inicio</a>
-            <a href="/Categorias/EtiquetasSemanticas.html">Etiquetas Semánticas</a>
-            <a href="/Categorias/Texto.html">Texto</a>
-            <a href="/Categorias/Listas.html">Listas</a>
-            <a href="/Categorias/Formularios.html">Formularios</a>
-            <a href="/Categorias/Tablas.html">Tablas</a>
-            <a href="/Categorias/Multimedia.html">Multimedia</a>
+            <a href="EtiquetasSemanticas.html">Etiquetas Semánticas</a>
+            <a href="Texto.html">Texto</a>
+            <a href="Listas.html">Listas</a>
+            <a href="Formularios.html">Formularios</a>
+            <a href="Tablas.html">Tablas</a>
+            <a href="Multimedia.html">Multimedia</a>
         </div>
 
         <!-- Redes sociales -->
@@ -291,6 +298,6 @@
 
 </footer>
 
-<script src="/Assets/Funcion.js"></script>
+<script src="../Assets/Funcion.js"></script>
 </body>
 </html>

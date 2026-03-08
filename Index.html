@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/Assets/Style.css">
+    <link rel="stylesheet" href="Assets/Style.css">
     <title>Etiquetas HTML</title>
     
 </head>
@@ -14,13 +14,20 @@
 <!-- NAV -->
 <nav>
     <h2>Etiquetas HTML</h2>
-    <a href="/Index.html">Inicio</a> |
-    <a href="/Categorias/EtiquetasSemanticas.html">Etiquetas Semánticas</a> |
-    <a href="/Categorias/Texto.html">Texto</a> |
-    <a href="/Categorias/Listas.html">Listas</a> |
-    <a href="/Categorias/Formularios.html">Formularios</a> |
-    <a href="/Categorias/Tablas.html">Tablas</a> |
-    <a href="/Categorias/Multimedia.html">Multimedia</a>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="/Index.html">Inicio</a>
+        <a href="categorias/EtiquetasSemanticas.html">Etiquetas Semánticas</a>
+        <a href="categorias/Texto.html">Texto</a>
+        <a href="categorias/Listas.html">Listas</a>
+        <a href="categorias/Formularios.html">Formularios</a>
+        <a href="categorias/Tablas.html">Tablas</a>
+        <a href="categorias/Multimedia.html">Multimedia</a>
+    </div>
 </nav>
 
 <main id="contenido-principal">
@@ -114,7 +121,7 @@
 
         <!-- Logo + descripción -->
         <div class="footer-box">
-            <img id="logo-footer" src="img/logo2.png" alt="Logo HTML">
+            <img id="logo-footer" src="/img/logo2.png" alt="Logo HTML">
             <p>Proyecto académico sobre las principales etiquetas de HTML.</p>
         </div>
 
@@ -122,12 +129,12 @@
         <div class="footer-box">
             <h4>Enlaces</h4>
             <a href="./Index.html">Inicio</a>
-            <a href="/Categorias/EtiquetasSemanticas.html">Etiquetas Semánticas</a>
-            <a href="/Categorias/Texto.html">Texto</a>
-            <a href="/Categorias/Listas.html">Listas</a>
-            <a href="/Categorias/Formularios.html">Formularios</a>
-            <a href="/Categorias/Tablas.html">Tablas</a>
-            <a href="/Categorias/Multimedia.html">Multimedia</a>
+            <a href="./EtiquetasSemanticas.html">Etiquetas Semánticas</a>
+            <a href="./Texto.html">Texto</a>
+            <a href="./Listas.html">Listas</a>
+            <a href="./Formularios.html">Formularios</a>
+            <a href="./Tablas.html">Tablas</a>
+            <a href="./Multimedia.html">Multimedia</a>
         </div>
 
         <!-- Redes sociales -->
